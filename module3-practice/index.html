@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restraunt Menu</title>
+	
+	<!-- Подключение bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.5.2-dist/css/style.css">
+	
+	<!-- Подключение шрифтов -->
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<!-- Подключение иконок -->
+	<script src="https://kit.fontawesome.com/60692fea6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+				<div class="navbar-header">
+
+					<!-- Логотип компании -->
+					<a href="index.html" class="float-left d-none d-lg-block">
+						<div id="logo-img" alt="Logo image"></div>
+					</a>
+
+					<!-- Название компании -->
+					<div class="navbar-brand">
+						<a href="index.html"><h1>David Chu's China Bistro</h1></a>
+						<p>
+							<img src="images/star-k-logo.png" alt="Kosher certification">
+							<span>Kosher Certified</span>
+						</p>
+					</div>
+
+					<!-- Кнопка меню для маленьких экранов -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable-nav">
+						<i class="fas fa-bars"></i>
+					</button>
+
+				</div>
+
+				<!-- Пункты меню навигации -->
+				<div class="collapse navbar-collapse justify-content-end align-self-start" id="collapsable-nav">
+					<ul id="nav-list" class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="menu-categories.html">
+								<i class="fas fa-utensils"></i><br class="d-none d-md-block"> Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-info-circle"></i><br class="d-none d-md-block"> About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-certificate"></i><br class="d-none d-md-block"> Awards</a>
+						</li>
+						<li id="phone" class="d-none d-md-block">
+							<a class="nav-link" href="tel:+79168854271">
+								<span>410-602-5008</span></a><div>* We Deliver</div>
+						</li>
+					</ul>
+				</div> <!-- Пункты меню навигации -->
+			</div> <!-- .container -->
+		</nav>
+	</header>
+
+	<!-- Кнопка доставки на маленьком экране -->
+	<div id="call-btn" class="d-block d-md-none">
+		<a class="btn" href="tel:+79168854271">
+			<i class="fas fa-phone"></i>
+			410-602-5008
+		</a>
+	</div>
+	<div id="s-deliver" class="text-center d-block d-md-none">* We Deliver</div>
+
+	<!-- Jumbotron для обычных экранов -->
+	<div id="jumbotron-lg" class="container d-none d-md-block">
+		<div class="jumbotron"></div>
+	</div>
+	<!-- Jumbotron для маленьких экранов -->
+	<div id="jumbotron-sm" class="container-fluid d-block d-md-none">
+		<div class="jumbotron-fluid">
+			<img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-fluid">
+		</div>
+	</div>
+
+	<!-- 3 кнопки под jumbotron -->
+	<div  id="main-content" class="container">	
+		<div id="home-tiles" class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-12">
+				<a href="https://goo.gl/maps/VD7tzrpU7Ajnx1DE8" target="_blank">
+					<div id="map-tile">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6752464053507!2d-76.71387678470062!3d39.363590279501366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sru!2sru!4v1602083155084!5m2!1sru!2sru" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<span>map</span>
+					</div>
+				</a>
+			</div>
+		</div> <!-- #home-tiles .row -->
+	</div> <!-- #main-content .container -->
+
+	<footer class="panel-footer">
+		<div class="container">
+			<div class="row">
+				<section id="hours" class="col-xs-12 col-md-4">
+					<span>Hours:</span><br>
+					Sun-Thurs: 11:15am - 10:00pm<br>
+					Fri: 11:15am - 2:30pm<br>
+					Saturday Closed
+					<hr class="d-block d-md-none">
+				</section>
+				<section id="address" class="col-xs-12 col-md-4">
+					<span>Address:</span><br>
+					7105 Reisterstown Road<br>
+					Baltimore, MD 21215
+					<p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+					<hr class="d-block d-md-none">
+				</section>
+				<section id="testimonials" class="col-xs-12 col-md-4">
+					<p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+					<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+				</section>
+			</div> <!-- .row -->
+			<div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+		</div> <!-- .container -->
+	</footer> <!-- .panel-footer -->
+
+
+
+	<!-- Подключаем js -->
+	<script type="text/javascript" src="bootstrap-4.5.2-dist/js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap-4.5.2-dist/js/script.js"></script>
+</body>
+</html>
