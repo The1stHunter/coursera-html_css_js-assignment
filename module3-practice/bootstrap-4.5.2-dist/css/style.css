@@ -368,7 +368,7 @@ h3.menu-item-title {
 	#collapsable-nav a { /*Collapseb menu*/
 		font-size: 1.2em;
 		/*Это нужно только для пункта меню Home, где это прописано у других пунктов я хз*/
-		text-decoration: none; 
+/*		text-decoration: none; */
 	}
 
 	#collapsable-nav a i {
